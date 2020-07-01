@@ -7,7 +7,7 @@
      width="100%" />
      
      
-# **DATA-X:** <br>  m410 - INTRODUCTION TO TENSORFLOW FOR DEEP LEARNING
+# **DATA-X:** <br>  m410 - SHALLOW NEURAL NETWORKS AN INTRODUCTION TO TENSORFLOW
 
 <br>
 
@@ -16,7 +16,7 @@
 
 
 
-**Author List (in no particular order):** [Rajarathnam Balakrishnan](https://www.linkedin.com/in/rajarathnam-balakrishnan-7b447b135), [Elias Castro Hernandez](https://www.linkedin.com/in/ehcastroh/), [Ikhlaq Sidhu](https://ikhlaq-sidhu.com/), [Debbie Yuen](http://www.debbiecyuen.me/), and [Alexander Fred-Ojala](https://www.linkedin.com/in/alexanderfo/) 
+**Author List (in no particular order):** [Elias Castro Hernandez](https://www.linkedin.com/in/ehcastroh/), [Ikhlaq Sidhu](https://ikhlaq-sidhu.com/), [Debbie Yuen](http://www.debbiecyuen.me/), and [Alexander Fred-Ojala](https://www.linkedin.com/in/alexanderfo/) 
 
 **About (TL/DR):** Tensorflow (TF) is an open-source library used for dataflow, differentiable programming, symbolic math ,and machine learning applications such as deep learning neural networks. TF's flexible architecture allows for easy deployment across varied processing platforms. 
 
