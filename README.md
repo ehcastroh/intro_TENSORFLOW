@@ -68,7 +68,7 @@
      style="align:center" 
      width="40%"/>
      
-    1) PART 1.5: TENSORFLOW COMPUTATION GRAPHS
+    1) PART 2.1: TENSORFLOW COMPUTATION FUNCTION -- \@tf.function
 
     
 #### **III. WRAP UP AND NEXT STEPS**
