@@ -7,7 +7,7 @@
      width="100%" />
      
      
-# **DATA-X:** <br>  m410 - SHALLOW NEURAL NETWORKS; AN INTRODUCTION TO TENSORFLOW
+# **DATA-X:** <br>  m410 - SHALLOW NEURAL NETWORKS; AN INTRODUCTION TO TENSORFLOW V.2
 
 <br>
 
@@ -16,7 +16,7 @@
 
 
 
-**Author List (in no particular order):** [Elias Castro Hernandez](https://www.linkedin.com/in/ehcastroh/), [Ikhlaq Sidhu](https://ikhlaq-sidhu.com/), [Debbie Yuen](http://www.debbiecyuen.me/), and [Alexander Fred-Ojala](https://www.linkedin.com/in/alexanderfo/) 
+**Author List (in no particular order):** [Elias Castro Hernandez](https://www.linkedin.com/in/ehcastroh/), [Rajarathnam Balakrishnan](https://www.linkedin.com/in/rajarathnam-balakrishnan-7b447b135/), [Ikhlaq Sidhu](https://ikhlaq-sidhu.com/), [Debbie Yuen](http://www.debbiecyuen.me/), and [Alexander Fred-Ojala](https://www.linkedin.com/in/alexanderfo/) 
 
 **About (TL/DR):** Tensorflow (TF) is an open-source library used for dataflow, differentiable programming, symbolic math ,and machine learning applications such as deep learning neural networks. TF's flexible architecture allows for easy deployment across varied processing platforms. 
 
@@ -35,7 +35,7 @@
 
 <hr style="border: 4px solid#003262;" />
 
-<img src="assets/content/images/pandas_thumbnail1-01.png"
+<img src="assets/content/images/tensorflow_thumbnail-01.png"
      alt="TF thumbnail"
      align="center" 
      style="align:center" 
@@ -43,10 +43,10 @@
      
 ### **CONTENT**   
 
-  - m410_tensorflow_for_deep_learning -- Overview of TensorFlow syntax, operations, and execution.
+  - m410_shallow_neural_networks_introduction_to_tensorflow -- Overview of TensorFlow syntax, operations, and execution.
   - assets/homeworks/   -- Contains several exercises to help you master the material.
 
-#### **I. TODO**
+#### **I. TENSORS AND OPERATIONS**
 
 <img src="assets/content/images/pandas-19.png"
      alt="Simple Architecture"
@@ -54,9 +54,14 @@
      style="align:center" 
      width="40%"/>
      
-    1) TODO
+    1) PART 1.0: TENSORFLOW INSTALLATION NOTES
+    2) PART 1.1: TENSORFLOW SETUP
+    3) PART 1.2: TENSORBOARD SETUP
+    4) PART 1.3: TENSORFLOW TENSORS
+    5) PART 1.4: TENSORFLOW OPERATIONS
+    6) PART 1.5 (OPTIONAL): EAGER EXECUTION
     
-#### **II. TODO**
+#### **II. TENSORFLOW GRAPHS AND EXECUTIONS**
 
 <img src="assets/content/images/pandas-16.png"
      alt="Simple Architecture"
@@ -64,7 +69,7 @@
      style="align:center" 
      width="40%"/>
      
-    1) TODO
+    1) PART 1.5: TENSORFLOW COMPUTATION GRAPHS
 
     
 #### **III. WRAP UP AND NEXT STEPS**
