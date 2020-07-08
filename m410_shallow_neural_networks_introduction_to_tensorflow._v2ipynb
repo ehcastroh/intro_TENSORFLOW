@@ -73,8 +73,9 @@
    "source": [
     "#### APPENDIX\n",
     "\n",
-    "> #### [PREREQUISITE KNOWLEDGE AND REQUIREMENTS](#Appendix_1)\n",
-    "> #### [REFERENCES AND ADDITIONAL RESOURCES](#Appendix_2)\n",
+    "> #### [TENSORFLOW INSTALLATION](#Appendix_1)\n",
+    "> #### [PREREQUISITE KNOWLEDGE AND REQUIREMENTS](#Appendix_2)\n",
+    "> #### [REFERENCES AND ADDITIONAL RESOURCES](#Appendix_3)\n",
     "\n",
     "<br>\n"
    ]
@@ -135,215 +136,11 @@
     "\n",
     "#### CONTENTS:\n",
     "\n",
-    "> [PART 1.0: TENSORFLOW INSTALLATION NOTES](#Part_1_0)<br>\n",
     "> [PART 1.1: TENSORFLOW SETUP](#Part_1_1)<br>\n",
     "> [PART 1.2: TENSORBOARD SETUP](#Part_1_2)<br>\n",
     "> [PART 1.3: TENSORFLOW TENSORS](#Part_1_3)<br>\n",
     "> [PART 1.4: TENSORFLOW OPERATIONS](#Part_1_4)<br>\n",
     "> [PART 1.5 (OPTIONAL): EAGER EXECUTION](#Part_1_5)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<a id='Part_1_0'></a>\n",
-    "\n",
-    "<hr style=\"border: 1px solid#003262;\" />\n",
-    "\n",
-    "#### PART 1.0: TENSORFLOW INSTALLATION NOTES\n",
-    "\n",
-    "<br>\n",
-    "\n",
-    "<div align=\"center\" style=\"font-size:12px; font-family:FreeMono; font-weight: 100; font-stretch:ultra-condensed; line-height: 1.0; color:#2A2C2B\">\n",
-    "    <img src=\"/assets/content/images/tf_logo_social.png\" align=\"center\" width=\"30%\" padding=\"0px\"><br>\n",
-    "    <br>\n",
-    "</div>"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "#### **1.0.1 Install Python Development Environment**\n",
-    "\n",
-    "___"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "\n",
-    "\n",
-    "#### **Install/Update pip3**\n",
-    "\n",
-    "https://pip.pypa.io/en/stable/installing/\n",
-    "\n",
-    "```bash\n",
-    "    # TensorFlow requires pip version >= 19.0\n",
-    "    $ pip install --upgrade pip \n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "#### **Install/Update Python 3**\n",
-    "\n",
-    "https://www.python.org/downloads/\n",
-    "\n",
-    "```bash\n",
-    "    # TensorFlow requires Python 3.5-3.8 \n",
-    "    $ sudo apt-get update && sudo apt-get install python3-dev python3-pip python3-venv python-virtualenv\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "#### **1.0.2 Create Virtual Environgment (Recommended)**\n",
-    "\n",
-    "\n",
-    "___"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "**Create virtual environment**\n",
-    "\n",
-    ">On a terminal, or using magic keys, create a new virtual environment using a Python interpreter and creating a ```venv``` directory to hold it\n",
-    "\n",
-    "```bash\n",
-    "    $ python3 -m venv venv\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "**Activate the virtual environment**\n",
-    "\n",
-    "```bash\n",
-    "    $ source ./venv/bin/activate      # sh, bash, or zsh\n",
-    "\n",
-    "    $ . ./venv/bin/activate.fish       # fish\n",
-    "\n",
-    "    $ source ./venv/bin/activate.csh  # csh or tcsh\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "**Install packages within virtual environment**\n",
-    "\n",
-    "When the virtual environment is active, your shell prompt is prefixed by ```(venv)```\n",
-    "\n",
-    "> Step 1: reapeat 1.1.1 above, within ```(venv)```<br>\n",
-    "\n",
-    "```bash\n",
-    "    # TensorFlow requires pip version >= 19.0\n",
-    "    $ pip install --upgrade pip \n",
-    "```    "
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "> Step 2: Install TensorFlow2\n",
-    "\n",
-    "```bash\n",
-    "    (venv) $ pip install --upgrade tensorflow\n",
-    "```\n"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "> Step 3: Verify install\n",
-    "\n",
-    "```bash\n",
-    "    (venv) $ python -c \"import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))\"\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "> Step 4: To exit virtual enviroment later\n",
-    "\n",
-    "```bash\n",
-    "    (venv) $ pip deactivate\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "#### **1.0.3 Install TensorFlow on Local Machine (Optional Setup)**\n",
-    "\n",
-    "___\n",
-    "\n",
-    "\n",
-    "**TensorFlow 2**\n",
-    "\n",
-    "https://www.tensorflow.org/install/pip\n",
-    "\n",
-    "```bash\n",
-    "    # Install using pip\n",
-    "    $ pip install --upgrade tensorflow \n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "**Verify Installation**\n",
-    "\n",
-    "```bash\n",
-    "    $ python -c \"import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))\"\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "<br>\n",
-    "\n",
-    "#### **1.0.4 Run TensorFlow in a Container (Optional Setup)**\n",
-    "\n",
-    "___\n",
-    "\n",
-    "[**Tensorflow Docker images**](https://www.tensorflow.org/install/docker) come pre-configured to run TensorFlow, and provide a virtual environment that is generally the easiest way to set up [**GPU processing**](https://www.tensorflow.org/install/gpu). To learn more about how to use [**Docker**](https://www.tensorflow.org/install/docker/) to separate your applications from your infrastructure, click [here](https://docs.docker.com/get-docker/).\n",
-    "\n",
-    "<br>"
    ]
   },
   {
@@ -407,7 +204,7 @@
    "source": [
     "<br>\n",
     "\n",
-    "**Install TensorFlow:** the following will install TensorFlow using bash. It serves our purposes. However, for detailed installation instructions see [Part 1.1](#Part_1_1)"
+    "**Install TensorFlow:** the following will install TensorFlow using bash. It serves our purposes. However, for detailed installation instructions see [Appendix I](#Appendix_1)"
    ]
   },
   {
@@ -1021,6 +818,16 @@
     "# Reassign the value of a Variable\n",
     "var.assign(4)\n",
     "var"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "___\n",
+    "\n",
+    "**Remark:** why ```tf.constant()``` yet ```tf.Variable()```?  The lowercase ```c``` in ```tf.constant()``` is intended to indicate that tf.constant is an operation, while the captital ```V``` in ```tf.Variable```, is to indicate that it is a class with many operations.\n",
+    "___"
    ]
   },
   {
@@ -1656,7 +1463,7 @@
     }
    ],
    "source": [
-    "# Alternatively, element-wise addition\n",
+    "# Alternatively, element-wise addition using operator overloading\n",
     "print(a + b)"
    ]
   },
@@ -1696,8 +1503,30 @@
     }
    ],
    "source": [
-    "# Alternatively, element-wise multiplication\n",
+    "# Alternatively, element-wise multiplication using operator overloading\n",
     "print(a * b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 10  40]\n",
+      " [ 90 160]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Use NumPy values\n",
+    "import numpy as np\n",
+    "\n",
+    "ab = np.multiply(a, b)\n",
+    "print(ab)"
    ]
   },
   {
@@ -1738,7 +1567,7 @@
    ],
    "source": [
     "# Alternatively, Matrix multiplication\n",
-    "print(a @ b, \"\\n\")"
+    "print(a @ b)"
    ]
   },
   {
@@ -1749,7 +1578,11 @@
     "\n",
     "#### **1.4.2 Operations on Tensors**\n",
     "\n",
-    "___"
+    "___\n",
+    "\n",
+    "<br>\n",
+    "\n",
+    "The following represent a few operations on tensors. For a comprehensive list see [here](https://www.tensorflow.org/api_docs/python/tf/Tensor)."
    ]
   },
   {
@@ -1823,11 +1656,108 @@
    "source": [
     "<br>\n",
     "\n",
-    "#### **1.3.2 Data Selection: Indexing and Slicing a DataFrame**\n",
+    "#### **1.4.3 Data Selection: Indexing and Slicing a Tensor**\n",
+    "___\n",
     "\n",
-    ">[Indexing DataFrames](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#different-choices-for-indexing)<br>\n",
-    ">[Range Slicing DataFrames](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges)\n",
+    "<br>\n",
     "\n",
+    "TensorFlow follows standard Python indexing rules. For details see: [Indexing Tensors](https://www.tensorflow.org/guide/tensor#indexing)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Single-Axis Indexing**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<tf.Tensor: shape=(12,), dtype=int32, numpy=array([ 0,  1,  2,  3,  5,  6,  7,  8, 10, 20, 30, 40], dtype=int32)>"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_tensor = tf.constant([0, 1, 2, 3, 5, 6, 7, 8, 10, 20, 30, 40])\n",
+    "my_tensor"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "First: 0\n",
+      "Second: 1\n",
+      "Last: 40\n"
+     ]
+    }
+   ],
+   "source": [
+    "# indexing with a sclar removes the dimension\n",
+    "print(\"First:\", my_tensor[0].numpy())\n",
+    "print(\"Second:\", my_tensor[1].numpy())\n",
+    "print(\"Last:\", my_tensor[-1].numpy())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "**Single-Axis Slicing**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Everything: [ 0  1  2  3  5  6  7  8 10 20 30 40]\n",
+      "Before 4: [2. 3. 4.]\n",
+      "From 4 to the end: []\n",
+      "From 2, before 8: [4.]\n",
+      "Every other item: [2. 4.]\n",
+      "Reversed: [4. 3. 2.]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Everything:\", my_tensor[:].numpy())\n",
+    "print(\"Before 4:\", rank_1_tensor[:4].numpy())\n",
+    "print(\"From 4 to the end:\", rank_1_tensor[4:].numpy())\n",
+    "print(\"From 2, before 8:\", rank_1_tensor[2:8].numpy())\n",
+    "print(\"Every other item:\", rank_1_tensor[::2].numpy())\n",
+    "print(\"Reversed:\", rank_1_tensor[::-1].numpy())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "___\n",
+    "\n",
+    "**Note:** Integer indexing removes the dimension, while range indexing (i.e. slice) keeps the dimension.\n",
+    "    \n",
     "___"
    ]
   },
@@ -1835,50 +1765,311 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "**Attribute Access**"
+    "<br>\n",
+    "\n",
+    "**Multi-Axis Indexing**"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 233,
+   "execution_count": 62,
    "metadata": {},
    "outputs": [
     {
-     "data": {
-      "text/plain": [
-       "1    1.764052\n",
-       "2    0.400157\n",
-       "3    0.978738\n",
-       "Name: a1, dtype: float64"
-      ]
-     },
-     "execution_count": 233,
-     "metadata": {},
-     "output_type": "execute_result"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 2.]\n",
+      " [3. 4.]\n",
+      " [5. 6.]]\n"
+     ]
     }
    ],
-   "source": []
+   "source": [
+    "# reusing rank-2 tensor from before\n",
+    "print(rank_2_tensor.numpy())"
+   ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 63,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Pull out a single value from a 2-rank tensor\n",
+    "print(rank_2_tensor[2, 1].numpy())"
+   ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 64,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Second row: [3. 4.]\n",
+      "Second column: [2. 4. 6.]\n",
+      "Last row: [5. 6.]\n",
+      "First item in last column: 2.0\n",
+      "Skip the first row:\n",
+      "[[3. 4.]\n",
+      " [5. 6.]] \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Get row and column tensors using combination of indexing and slices\n",
+    "print(\"Second row:\", rank_2_tensor[1, :].numpy())\n",
+    "print(\"Second column:\", rank_2_tensor[:, 1].numpy())\n",
+    "print(\"Last row:\", rank_2_tensor[-1, :].numpy())\n",
+    "print(\"First item in last column:\", rank_2_tensor[0, -1].numpy())\n",
+    "print(\"Skip the first row:\")\n",
+    "print(rank_2_tensor[1:, :].numpy(), \"\\n\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **1.4.4 Manipulating Tensor Shapes**\n",
+    "___\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "Performing a tensor [**reshape**](https://www.tensorflow.org/guide/tensor#manipulating_shapes) will work so long as the shape of the new tensor has the same number of elements. "
+   ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(3, 1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Shape returns a `TensorShape` object that shows the size on each dimension\n",
+    "var_x = tf.Variable(tf.constant([[1], [2], [3]]))\n",
+    "print(var_x.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[3, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Convert tensor object into a Python list\n",
+    "print(var_x.shape.as_list())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(3, 1)\n",
+      "(1, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Reshape a tensor to a new shape by passing a list\n",
+    "reshaped = tf.reshape(var_x, [1, 3])\n",
+    "\n",
+    "# sanity check\n",
+    "print(var_x.shape)\n",
+    "print(reshaped.shape)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **1.4.5 (Optional) Broadcasting Tensors**\n",
+    "___\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "[**Broadcasting**](https://www.tensorflow.org/guide/tensor#broadcasting) in TensorFlow is borrowed directly from the notion of [**NumPy Array Broadcasting**](https://numpy.org/doc/stable/user/basics.broadcasting.html). The general idea is that, under certain conditions, a smaller tensor can be 'stretched' to fit larger tensors when running combined operations on both.  Following are some examples of this concept."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "x = tf.constant([5, 7, 11])\n",
+    "y = tf.constant(3)\n",
+    "z = tf.constant([3, 3, 3])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "tf.Tensor([15 21 33], shape=(3,), dtype=int32)\n",
+      "tf.Tensor([15 21 33], shape=(3,), dtype=int32)\n",
+      "tf.Tensor([15 21 33], shape=(3,), dtype=int32)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Same results\n",
+    "print(tf.multiply(x, 3))\n",
+    "print(x * y)\n",
+    "print(x * z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "tf.Tensor(\n",
+      "[[ 5 10 15 20]\n",
+      " [ 7 14 21 28]\n",
+      " [11 22 33 44]], shape=(3, 4), dtype=int32)\n"
+     ]
+    }
+   ],
+   "source": [
+    "## To really grasp the idea: without broadcasting ##\n",
+    "x_stretch = tf.constant([[5, 5, 5, 5],\n",
+    "                         [7, 7, 7, 7],\n",
+    "                         [11, 11, 11, 11]])\n",
+    "\n",
+    "y_stretch = tf.constant([[1, 2, 3, 4],\n",
+    "                         [1, 2, 3, 4],\n",
+    "                         [1, 2, 3, 4]])\n",
+    "\n",
+    "# using operator overloading\n",
+    "result = x_stretch * y_stretch\n",
+    "\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "tf.Tensor(\n",
+      "[[ 5]\n",
+      " [ 7]\n",
+      " [11]], shape=(3, 1), dtype=int32) \n",
+      "\n",
+      "tf.Tensor([1 2 3 4], shape=(4,), dtype=int32) \n",
+      "\n",
+      "tf.Tensor(\n",
+      "[[ 5 10 15 20]\n",
+      " [ 7 14 21 28]\n",
+      " [11 22 33 44]], shape=(3, 4), dtype=int32)\n"
+     ]
+    }
+   ],
+   "source": [
+    "## To really grasp the idea: with broadcasting ##\n",
+    "# These are the same computations\n",
+    "x = tf.reshape(x,[3,1])\n",
+    "y = tf.range(1, 5)\n",
+    "print(x, \"\\n\")\n",
+    "print(y, \"\\n\")\n",
+    "print(tf.multiply(x, y))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "<br>\n",
+    "\n",
+    "<div align=\"center\" style=\"font-size:12px; font-family:FreeMono; font-weight: 100; font-stretch:ultra-condensed; line-height: 1.0; color:#2A2C2B\">\n",
+    "    <img src=\"/assets/content/images/DELETE_04_tensor_broadcasting.png\" align=\"center\" width=\"40%\" padding=\"10px\"><br>\n",
+    "    <br>\n",
+    "    Broadcasted Tensor\n",
+    "</div>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **1.4.6 (Optional) Ragged, String, and Sparse Tensors**\n",
+    "___\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "TensorFlow has several ways of dealing with 'abnormal' tensors. In particular:\n",
+    "\n",
+    ">[**Ragged Tensors**](https://www.tensorflow.org/guide/tensor#ragged_tensors) - variable number of element along some axis.<br>\n",
+    ">[**String Tensors**](https://www.tensorflow.org/guide/tensor#string_tensors) - atomic dtype that cannot be indexed similar to Python strings.<br>\n",
+    ">[**Sparse Tensors**](https://www.tensorflow.org/guide/tensor#sparse_tensors) - for handling sparse data, like a very wide embedding space."
+   ]
   },
   {
    "cell_type": "markdown",
@@ -1896,23 +2087,19 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
+   "cell_type": "markdown",
    "metadata": {},
-   "outputs": [],
    "source": [
-    "# Enable Eager Execution\n",
-    "# tf.enable_eager_execution"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Sanity Check\n",
-    "# tf.executin_eagerly()"
+    "<!--Navigate back to table of contents-->\n",
+    "<br>\n",
+    "<div alig=\"right\" style=\"text-align: right\">\n",
+    "    <span>\n",
+    "        <a style=\"color:#FFFFFF; background-color:#003262; border:1px solid #FFFFFF; border-color:#FFFFFF;border-radius:5px;border-width:0px;display:inline-block;font-family:arial,helvetica,sans-serif;font-size:10px;letter-spacing:0px;line-height:10px;padding:10px 20px;text-align:center;text-decoration:none; align:center\" href=\"#Part_table_contents\" name=\"Table of Contents\"  id=\"Part_table_contents\"> \n",
+    "            Table of Contents \n",
+    "        </a>\n",
+    "    </span>\n",
+    "</div>\n",
+    "<!-------------------------------------->"
    ]
   },
   {
@@ -1930,7 +2117,7 @@
     "<br>\n",
     "\n",
     "<div align=\"center\" style=\"font-size:12px; font-family:FreeMono; font-weight: 100; font-stretch:ultra-condensed; line-height: 1.0; color:#2A2C2B\">\n",
-    "    <img src=\"/assets/content/images/pandas_logo.png\" align=\"center\" width=\"15%\" padding=\"10\"><br>\n",
+    "    <img src=\"/assets/content/images/DELETE_03a_tensorflow_computational_graph.png\" align=\"center\" width=\"40%\" padding=\"10\"><br>\n",
     "    <br>\n",
     "</div>\n",
     "\n",
@@ -1941,8 +2128,8 @@
     "#### CONTENTS:\n",
     "\n",
     "> [PART 2.1: TENSORFLOW COMPUTATION GRAPHS](#Part_2_1)<br>\n",
-    "> [PART 2.1: TENSORFLOW OPERATIONS](#Part_2_2)<br>\n",
-    "> [PART 2.2: TO DO](#Part_2_3)<br>\n"
+    "> [PART 2.2: TENSORFLOW EXECUTIONS](#Part_2_2)<br>\n",
+    "> [PART 2.3: TO DO](#Part_2_3)<br>\n"
    ]
   },
   {
@@ -1957,7 +2144,7 @@
     "<br>\n",
     "\n",
     "<div align=\"center\" style=\"font-size:12px; font-family:FreeMono; font-weight: 100; font-stretch:ultra-condensed; line-height: 1.0; color:#2A2C2B\">\n",
-    "    <img src=\"/assets/content/images/DELETE-03_tensorflow_computation_graph.png\" align=\"center\" width=\"40%\" padding=\"0px\"><br>\n",
+    "    <img src=\"/assets/content/images/DELETE-03b_tensorflow_computation_graph.png\" align=\"center\" width=\"40%\" padding=\"0px\"><br>\n",
     "    <br>\n",
     "</div>"
    ]
@@ -2235,13 +2422,6 @@
    "source": []
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -2292,12 +2472,239 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "<!--Navigate back to table of contents-->\n",
+    "<div alig=\"right\" style=\"text-align: right\">\n",
+    "    <span>\n",
+    "        <a style=\"color:#FFFFFF; background-color:#003262; border:1px solid #FFFFFF; border-color:#FFFFFF;border-radius:5px;border-width:0px;display:inline-block;font-family:arial,helvetica,sans-serif;font-size:10px;letter-spacing:0px;line-height:10px;padding:10px 20px;text-align:center;text-decoration:none; align:center\" href=\"#Part_table_contents\" name=\"Table of Contents\"  id=\"Part_table_contents\"> \n",
+    "            Table of Contents \n",
+    "        </a>\n",
+    "    </span>\n",
+    "</div>\n",
+    "<!-------------------------------------->"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "<a id='Appendix_1'></a>\n",
     "\n",
     "<hr style=\"border: 6px solid#003262;\" />\n",
     "\n",
-    "\n",
     "#### APPENDIX I\n",
+    "\n",
+    "\n",
+    "## **TENSORFLOW** INSTALLATION\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "<div align=\"center\" style=\"font-size:12px; font-family:FreeMono; font-weight: 100; font-stretch:ultra-condensed; line-height: 1.0; color:#2A2C2B\">\n",
+    "    <img src=\"/assets/content/images/tf_logo_social.png\" align=\"center\" width=\"30%\" padding=\"0px\"><br>\n",
+    "    <br>\n",
+    "</div>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **Appendix I.1 Install Python Development Environment**\n",
+    "\n",
+    "___"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### **Install/Update pip3**\n",
+    "\n",
+    "https://pip.pypa.io/en/stable/installing/\n",
+    "\n",
+    "```bash\n",
+    "    # TensorFlow requires pip version >= 19.0\n",
+    "    $ pip install --upgrade pip \n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **Install/Update Python 3**\n",
+    "\n",
+    "https://www.python.org/downloads/\n",
+    "\n",
+    "```bash\n",
+    "    # TensorFlow requires Python 3.5-3.8 \n",
+    "    $ sudo apt-get update && sudo apt-get install python3-dev python3-pip python3-venv python-virtualenv\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **Appendix I.2 Create Virtual Environgment (Recommended)**\n",
+    "\n",
+    "\n",
+    "___"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**Create virtual environment**\n",
+    "\n",
+    ">On a terminal, or using magic keys, create a new virtual environment using a Python interpreter and creating a ```venv``` directory to hold it\n",
+    "\n",
+    "```bash\n",
+    "    $ python3 -m venv venv\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "**Activate the virtual environment**\n",
+    "\n",
+    "```bash\n",
+    "    $ source ./venv/bin/activate      # sh, bash, or zsh\n",
+    "\n",
+    "    $ . ./venv/bin/activate.fish       # fish\n",
+    "\n",
+    "    $ source ./venv/bin/activate.csh  # csh or tcsh\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "**Install packages within virtual environment**\n",
+    "\n",
+    "When the virtual environment is active, your shell prompt is prefixed by ```(venv)```\n",
+    "\n",
+    "> Step 1: reapeat 1.1.1 above, within ```(venv)```<br>\n",
+    "\n",
+    "```bash\n",
+    "    # TensorFlow requires pip version >= 19.0\n",
+    "    $ pip install --upgrade pip \n",
+    "```    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "> Step 2: Install TensorFlow2\n",
+    "\n",
+    "```bash\n",
+    "    (venv) $ pip install --upgrade tensorflow\n",
+    "```\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "> Step 3: Verify install\n",
+    "\n",
+    "```bash\n",
+    "    (venv) $ python -c \"import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))\"\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "> Step 4: To exit virtual enviroment later\n",
+    "\n",
+    "```bash\n",
+    "    (venv) $ pip deactivate\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **Appendix I.3 Install TensorFlow on Local Machine (Optional Setup)**\n",
+    "\n",
+    "___\n",
+    "\n",
+    "\n",
+    "**TensorFlow 2**\n",
+    "\n",
+    "https://www.tensorflow.org/install/pip\n",
+    "\n",
+    "```bash\n",
+    "    # Install using pip\n",
+    "    $ pip install --upgrade tensorflow \n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "**Verify Installation**\n",
+    "\n",
+    "```bash\n",
+    "    $ python -c \"import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))\"\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<br>\n",
+    "\n",
+    "#### **Appendix I.4 Run TensorFlow in a Container (Optional Setup)**\n",
+    "\n",
+    "___\n",
+    "\n",
+    "<br>\n",
+    "\n",
+    "[**Tensorflow Docker images**](https://www.tensorflow.org/install/docker) come pre-configured to run TensorFlow, and provide a virtual environment that is generally the easiest way to set up [**GPU processing**](https://www.tensorflow.org/install/gpu). To learn more about how to use [**Docker**](https://www.tensorflow.org/install/docker/) to separate your applications from your infrastructure, click [here](https://docs.docker.com/get-docker/).\n",
+    "\n",
+    "<br>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<a id='Appendix_2'></a>\n",
+    "\n",
+    "<hr style=\"border: 2px solid#003262;\" />\n",
+    "\n",
+    "\n",
+    "#### APPENDIX II\n",
     "\n",
     "\n",
     "## PREREQUISITE **KNOWLEDGE** AND **REQUIREMENTS**\n",
@@ -2344,11 +2751,11 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "<a id='Appendix_2'></a>\n",
+    "<a id='Appendix_3'></a>\n",
     "\n",
     "<hr style=\"border: 2px solid#003262;\" />\n",
     "\n",
-    "#### APPENDIX II\n",
+    "#### APPENDIX III\n",
     "\n",
     "\n",
     "## **REFERENCES** AND ADDITIONAL **RESOURCES**\n",
