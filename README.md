@@ -70,7 +70,7 @@
      
     1) PART 2.1: TENSORFLOW COMPUTATION FUNCTION -- \@tf.function
 
-#### **III (OPTIONAL). TENSORFLOW LINEAR REGRESSION**
+#### **III. TENSORFLOW LINEAR REGRESSION (OPTIONAL)**
 
 <img src="assets/content/images/pandas-16.png"
      alt="Simple Architecture"
