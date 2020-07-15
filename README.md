@@ -48,7 +48,7 @@
 
 #### **I. TENSORS AND OPERATIONS**
 
-<img src="assets/content/images/pandas-19.png"
+<img src="assets/content/images/tensorflowillustrations1-03.png"
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
@@ -62,17 +62,17 @@
     
 #### **II. TENSORFLOW GRAPHS AND EXECUTIONS**
 
-<img src="assets/content/images/pandas-16.png"
+<img src="assets/content/images/tensorflowillustrations1-07.png"
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
-     width="40%"/>
+     width="80%"/>
      
     1) PART 2.1: TENSORFLOW COMPUTATION FUNCTION -- \@tf.function
 
 #### **III. TENSORFLOW LINEAR REGRESSION (OPTIONAL)**
 
-<img src="assets/content/images/pandas-16.png"
+<img src="assets/content/images/tensorflowillustrations1-05.png"
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
