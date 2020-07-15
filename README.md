@@ -66,7 +66,7 @@
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
-     width="80%"/>
+     width="40%"/>
      
     1) PART 2.1: TENSORFLOW COMPUTATION FUNCTION -- \@tf.function
 
