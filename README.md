@@ -48,7 +48,7 @@
 
 #### **I. TENSORS AND OPERATIONS**
 
-<img src="assets/content/images/tensorflowillustrations1-03.png"
+<img src="assets/content/images/tF_update-03.png"
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
@@ -62,7 +62,7 @@
     
 #### **II. TENSORFLOW GRAPHS AND EXECUTIONS**
 
-<img src="assets/content/images/tensorflowillustrations1-07.png"
+<img src="assets/content/images/tF_update-01.png"
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
@@ -72,7 +72,7 @@
 
 #### **III. TENSORFLOW LINEAR REGRESSION (OPTIONAL)**
 
-<img src="assets/content/images/tensorflowillustrations1-05.png"
+<img src="assets/content/images/tF_update-05.png"
      alt="Simple Architecture"
      align="center" 
      style="align:center" 
