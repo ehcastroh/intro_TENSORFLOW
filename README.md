@@ -70,19 +70,8 @@
      
     1) PART 2.1: TENSORFLOW COMPUTATION FUNCTION -- \@tf.function
 
-#### **III. TENSORFLOW LINEAR REGRESSION (OPTIONAL)**
-
-<img src="assets/content/images/tF_update-05.png"
-     alt="Simple Architecture"
-     align="center" 
-     style="align:center" 
-     width="40%"/>
      
-    1) PART 3.1: PROBLEM DEFINITION AND SETUP
-    2) PART 3.2: MODEL
-    3) PART 3.3: GENERALIZATION AND PREDICTIONS    
-    
-#### **IV. WRAP UP AND NEXT STEPS**
+#### **III. WRAP UP AND NEXT STEPS**
 
 You've completed the introduction to TensorFlow V.2, and once can assume that you are ready to get things done with your new knowledge. Visit the [**Data-X website**](https://datax.berkeley.edu/) to learn how to use Tensorflow to tackle various deep learning problems, or use the following links to some topics of interest:
 
