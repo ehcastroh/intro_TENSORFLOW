@@ -26,7 +26,7 @@
 
 **Keywords (Tags):** tensorflow, tensor-flow, tensorflow-tutorial, deep-learning, deep-learning-with-python, neural-networks, data-x, uc-berkeley-engineering 
 
-**Prerequisite Knowledge:** (1) Python, (2) NumPy, (3) Pandas, (4) Linear Algebra, (5) Bash 
+**Prerequisite Knowledge:** (1) Python, (2) NumPy, (3) Pandas, (4) Linear Algebra
 
 **Target User:** Data scientists, applied machine learning engineers, and developers
 
@@ -58,7 +58,6 @@
     2) PART 1.2: TENSORBOARD SETUP
     3) PART 1.3: TENSORFLOW TENSORS
     4) PART 1.4: TENSORFLOW OPERATIONS
-    5) PART 1.5 (OPTIONAL): EAGER EXECUTION
     
 #### **II. TENSORFLOW GRAPHS AND EXECUTIONS**
 
@@ -73,7 +72,7 @@
      
 #### **III. WRAP UP AND NEXT STEPS**
 
-You've completed the introduction to TensorFlow V.2, and once can assume that you are ready to get things done with your new knowledge. Visit the [**Data-X website**](https://datax.berkeley.edu/) to learn how to use Tensorflow to tackle various deep learning problems, or use the following links to some topics of interest:
+You've completed the introduction to TensorFlow V.2, and one can assume that you are ready to get things done with your new knowledge. Visit the [**Data-X website**](https://datax.berkeley.edu/) to learn how to use Tensorflow to tackle various deep learning problems, or use the following links to some topics of interest:
 
 > [TODO (m--): url needed]() TODO TODO TODO.
 
